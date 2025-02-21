@@ -21,7 +21,7 @@ def add_todo():
     if not title or not description:
         flash("Title and Description are required!", "danger")
         return redirect('/')
-
+#this is my code
     # Insert the new todo in the database
     db.todos.insert_one({'title': title, 'description': description})
     flash("Todo added successfully!", "success")
